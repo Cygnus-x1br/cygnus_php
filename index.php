@@ -76,11 +76,18 @@
         </nav>
     </section>
 
+    <pre>
+        <?php
+        print_r($_GET)
+        ?>
+    </pre>
     <?php
-    if (isset($_GET["url"])) {
 
-        if (file_exists($_GET["url"] . ".html")) {
-            include($_GET["url"] . ".html");
+    if (isset($_GET["url"])) {
+        $_page = $_GET["url"] . ".html";
+        echo $_page;
+        if (file_exists($_page)) {
+            include($_page);
         } else {
             echo "<h1> 404 - Falha no carregamento </h1>";
         }
@@ -88,6 +95,7 @@
         include("home.html");
     }
     ?>
+
 
     <footer>
         <p>&copy 2021 CYGNUS RH</p>
