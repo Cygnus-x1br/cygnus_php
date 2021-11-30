@@ -38,7 +38,7 @@
     <meta name="description" content="Cygnus Recursos Humanos. Agencia de empregos em Mogi Guaçu. Trabalhamos vagas de emprego em toda a região da Baixa Mogiana (Mogi Guaçu, Mogi Mirim, Itapira Socorro, Jacutinga, Estiva Gerbi e ABC Paulista" />
     <meta name="author" content="Jean Marcel Fiad" />
     <meta name="robots" content="index, follow" />
-    <title>Cygnus Recursos Humanos * Bem vindo</title>
+    <title>**Teste**Cygnus Recursos Humanos * Bem vindo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -77,7 +77,7 @@
     </section>
 
     <?php
-    if (isset($_GET['url'])) {
+    if (isset($_GET["url"])) {
 
         if (file_exists($_GET["url"] . ".html")) {
             include($_GET["url"] . ".html");
@@ -85,7 +85,7 @@
             echo "<h1> 404 - Falha no carregamento </h1>";
         }
     } else {
-        include('home.html');
+        include("home.html");
     }
     ?>
 
